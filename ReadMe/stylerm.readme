@@ -1,0 +1,62 @@
+The provided code is a CSS stylesheet that defines the styling and layout of a web page, particularly for a movie-related application. Let's break down the CSS code section by section:
+
+1. **Font Import**:
+   - `@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');`: This imports the "Poppins" font from Google Fonts in two weights (200 and 400) to be used in the web page.
+
+2. **Root Variables**:
+   - `:root`: This pseudo-class defines global CSS variables. In this code, two variables are defined to store the primary and secondary colors that can be used throughout the stylesheet.
+
+3. **Universal Styling**:
+   - `*`: The asterisk (*) selector targets all HTML elements and sets the `box-sizing` property to `border-box`. This ensures that an element's padding and border are included in its total width and height.
+
+4. **Body Styling**:
+   - `body`: Styles the `<body>` element. It sets the background color to the primary color variable, uses the "Poppins" font for text, and removes margin to eliminate any default spacing.
+
+5. **Header Styling**:
+   - `header`: Styles the `<header>` element, which typically contains the site's logo and navigation.
+   - The background color is set to the secondary color variable.
+   - `header h1`: Styles the heading element inside the header.
+     - The text color is changed to a specific shade of turquoise.
+     - The `display: flex` and `justify-content: center` properties horizontally center the text.
+     - The `cursor: pointer` property changes the cursor to a pointer when hovering over the heading, indicating it's clickable.
+
+6. **Search Form Styling**:
+   - `header form`: Styles the form element inside the header.
+   - `display: flex` and `justify-content: center` properties center the form horizontally.
+
+7. **Search Input Styling**:
+   - `.search`: Styles the input elements with the class "search."
+   - Sets the background color to transparent with a white border, giving it a transparent appearance.
+   - Adds rounded corners using `border-radius`.
+   - Adjusts the font size, padding, and text color.
+   - Styles the placeholder text to be white.
+   - On focus, the input has no outline, and the background color reverts to the primary color variable.
+
+8. **Main Content Styling**:
+   - `main`: Styles the main content section.
+   - Uses flex layout properties to display content in a centered and wrapped manner.
+
+9. **Movie Card Styling**:
+   - `.movie`: Styles individual movie cards.
+   - Sets a fixed width, margin, background color, box shadow, position, and border radius.
+   - The `overflow: hidden` property hides any content that overflows the card.
+   - Creates a subtle border-radius to give a slightly rounded appearance to the cards.
+
+10. **Movie Image Styling**:
+    - `.movie img`: Styles images within movie cards, making them fill the entire width of the card.
+
+11. **Movie Info Styling**:
+    - `.movie-info`: Styles the container for movie information.
+    - Defines the color, layout, and alignment of the information, including text alignment and spacing.
+    - Styles the movie title and rating span.
+
+12. **Rating Color Styling**:
+    - `.movie-info span.green`, `.movie-info span.orange`, `.movie-info span.red`: These selectors define different styles for movie ratings based on their value. The styles include a background color and text color to represent ratings with different colors (e.g., green for high ratings, red for low ratings).
+
+13. **Movie Overview Styling**:
+    - `.overview`: Styles the movie overview container, which appears when hovering over a movie card.
+    - Sets the background color, padding, positioning, and transition for smooth animation.
+    - Initially, the `transform` property moves the container out of view (101% down).
+    - On hover (`:hover`), the container is animated to move up into view (0% position) with a smooth transition.
+
+This CSS code provides styling for a web page related to movies, including a header, search input, movie cards, and dynamic rating colors based on movie ratings. The styling is designed to be responsive and visually appealing.

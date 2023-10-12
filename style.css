@@ -25,11 +25,13 @@ header {
       color: rgb(7, 214, 179);
       display: flex;
       justify-content: center;
-      
+      cursor : pointer;   
+    
+    
   
   }
+
   header form{
-      /* background-color: white; */
       display: flex;
     justify-content: center;
   }
