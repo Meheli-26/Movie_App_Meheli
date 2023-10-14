@@ -59,7 +59,8 @@ form.addEventListener('submit', (e) => {
         getMovies(SEARCH_API + searchTerm)
 
         search.value = ''
-    } else {
+    } 
+    else {
         window.location.reload()
     }
 })
